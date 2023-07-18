@@ -1,0 +1,61 @@
+{
+  "kind": "collectionType",
+  "collectionName": "talks",
+  "info": {
+    "singularName": "talk",
+    "pluralName": "talks",
+    "displayName": "Talk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "topic": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "speaker": {
+      "type": "string",
+      "required": true
+    },
+    "speakerEducation": {
+      "type": "string",
+      "required": true
+    },
+    "speakerdetails": {
+      "type": "text",
+      "required": true
+    },
+    "speakerimg": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "talkimg": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "time": {
+      "type": "time",
+      "required": true
+    }
+  }
+}
