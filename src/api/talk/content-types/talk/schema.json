@@ -27,16 +27,16 @@
     },
     "speakerEducation": {
       "type": "string",
-      "required": true
+      "required": false
     },
     "speakerdetails": {
       "type": "text",
-      "required": true
+      "required": false
     },
     "speakerimg": {
       "type": "media",
       "multiple": false,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
@@ -44,7 +44,7 @@
     "talkimg": {
       "type": "media",
       "multiple": true,
-      "required": true,
+      "required": false,
       "allowedTypes": [
         "images"
       ]
