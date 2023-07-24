@@ -25,30 +25,6 @@
       "type": "string",
       "required": true
     },
-    "speakerEducation": {
-      "type": "string",
-      "required": false
-    },
-    "speakerdetails": {
-      "type": "text",
-      "required": false
-    },
-    "speakerimg": {
-      "type": "media",
-      "multiple": false,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
-    "talkimg": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images"
-      ]
-    },
     "date": {
       "required": true,
       "type": "date"
@@ -56,6 +32,9 @@
     "time": {
       "type": "time",
       "required": true
+    },
+    "location": {
+      "type": "string"
     }
   }
 }
