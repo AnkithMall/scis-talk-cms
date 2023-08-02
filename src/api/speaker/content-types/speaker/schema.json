@@ -28,6 +28,14 @@
       "allowedTypes": [
         "images"
       ]
+    },
+    "cv": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
     }
   }
 }

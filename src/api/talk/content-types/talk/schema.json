@@ -35,6 +35,12 @@
     },
     "location": {
       "type": "string"
+    },
+    "feedbacks": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::feedback.feedback",
+      "mappedBy": "talkId"
     }
   }
 }

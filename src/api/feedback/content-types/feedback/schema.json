@@ -4,7 +4,8 @@
   "info": {
     "singularName": "feedback",
     "pluralName": "feedbacks",
-    "displayName": "feedback"
+    "displayName": "feedback",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -17,13 +18,15 @@
     "email": {
       "type": "email"
     },
-    "topic": {
-      "type": "string",
-      "required": true
-    },
     "feedback": {
       "type": "text",
       "required": true
+    },
+    "talkId": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::talk.talk",
+      "inversedBy": "feedbacks"
     }
   }
 }
